@@ -3,7 +3,7 @@ export const SITE = {
   name: 'Génesis Cuba',
   tagline: 'Búsquedas genealógicas',
   description:
-    'Buscamos en Cuba los documentos de tus antepasados y te los enviamos en PDF a tu correo. Solo pagas después de recibirlos.',
+    'Somos un equipo de investigadores especializados en buscar antepasados en Cuba. Encontramos certificados de bautismo, matrimonio y defunción, y te los enviamos en PDF. Solo pagas después de recibirlos.',
 
   email: 'genesiscuba@gmail.com',
   facebook: 'https://www.facebook.com/profile.php?id=61566462497212',
@@ -18,7 +18,7 @@ export const STEPS = [
   },
   {
     title: 'Realizamos la búsqueda en Cuba',
-    text: 'Buscamos en el Registro Civil cubano para encontrar la información.',
+    text: 'Buscamos en los registros civiles y archivos eclesiásticos de Cuba para encontrar la información.',
   },
   {
     title: 'Evaluamos el resultado',
@@ -30,16 +30,49 @@ export const STEPS = [
   },
 ]
 
+export const SERVICES = [
+  {
+    icon: 'Church',
+    title: 'Documentos eclesiásticos',
+    text: 'Certificados de bautismo, matrimonio y defunción de los archivos de las parroquias.',
+  },
+  {
+    icon: 'Landmark',
+    title: 'Documentos civiles',
+    text: 'Certificados de los registros civiles cubanos para tus investigaciones personales o trámites legales.',
+  },
+  {
+    icon: 'Network',
+    title: 'Árbol genealógico',
+    text: 'Te ayudamos a conocer tu historia familiar y a reconstruir tu árbol genealógico.',
+  },
+  {
+    icon: 'FileSearch',
+    title: 'Documentos específicos',
+    text: '¿Necesitas un documento concreto? Cuéntanos qué buscas y lo investigamos.',
+  },
+]
+
 export const GUARANTEES = [
   {
     icon: 'ShieldCheck',
     title: 'Sin pago por adelantado',
-    text: 'No cobramos por adelantado. Pagas únicamente después de recibir el documento.',
+    text: 'No cobramos tarifas por adelantado. Solo pagas por los resultados que decidas aceptar.',
+  },
+  {
+    icon: 'BadgeCheck',
+    title: 'Control total',
+    text: 'Tú decides si quieres recibir la documentación encontrada y verificas su contenido antes de pagar.',
+  },
+  {
+    icon: 'Eye',
+    title: 'Transparencia y confianza',
+    text: 'Te damos información detallada y verificable en cada paso del proceso.',
   },
   {
     icon: 'Search',
     title: 'Investigación experta',
-    text: 'Especialistas en genealogía cubana, con experiencia y compromiso.',
+    text: 'Conocemos el territorio cubano y sus archivos históricos.',
   },
   {
     icon: 'Mail',
@@ -48,7 +81,7 @@ export const GUARANTEES = [
   },
   {
     icon: 'Lock',
-    title: 'Confianza y confidencialidad',
+    title: 'Confidencialidad',
     text: 'Tu información está segura con nosotros. Trabajamos con total discreción.',
   },
 ]
@@ -66,7 +99,17 @@ export const FAQS = [
   {
     question: '¿Y si no encuentran el documento?',
     answer:
-      'Después de buscar evaluamos si podemos obtenerlo y te lo decimos. Como solo se paga al recibir el documento, si no lo conseguimos no pagas nada.',
+      'Después de buscar evaluamos si podemos obtenerlo y te lo decimos. Solo pagas por los resultados que decidas aceptar.',
+  },
+  {
+    question: '¿Puedo ver el documento antes de pagar?',
+    answer:
+      'Sí. Tú decides si quieres recibir la documentación encontrada y puedes verificar su contenido antes de realizar cualquier pago.',
+  },
+  {
+    question: '¿Qué documentos pueden buscar?',
+    answer:
+      'Documentos eclesiásticos y civiles, como certificados de bautismo, matrimonio y defunción. También te ayudamos a reconstruir tu árbol genealógico.',
   },
   {
     question: '¿Cómo recibo el documento?',

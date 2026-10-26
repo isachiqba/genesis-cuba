@@ -48,8 +48,11 @@
             <input v-model="form.place" placeholder="Municipio y provincia" class="field" />
           </label>
           <label class="text-sm font-medium text-navy-900 sm:col-span-2">
-            Documento que buscas
-            <input v-model="form.document" required class="field" />
+            Qué necesitas
+            <select v-model="form.document" required class="field">
+              <option value="" disabled>Elige una opción</option>
+              <option v-for="option in documents" :key="option">{{ option }}</option>
+            </select>
           </label>
           <label class="text-sm font-medium text-navy-900 sm:col-span-2">
             Otros datos que puedan ayudar
@@ -77,6 +80,14 @@ import { reactive } from 'vue'
 import { Send } from 'lucide-vue-next'
 import { SITE } from '@/data/site'
 
+const documents = [
+  'Certificado de bautismo',
+  'Certificado de matrimonio',
+  'Certificado de defunción',
+  'Árbol genealógico',
+  'Otro documento (lo explico abajo)',
+]
+
 const form = reactive({ name: '', email: '', person: '', dates: '', place: '', document: '', notes: '' })
 
 // Sin servidor: abre el correo del cliente con el caso ya redactado.
@@ -88,7 +99,7 @@ const send = () => {
     `Persona que busco: ${form.person}`,
     `Fechas aproximadas: ${form.dates || '-'}`,
     `Lugar: ${form.place || '-'}`,
-    `Documento que busco: ${form.document}`,
+    `Qué necesito: ${form.document}`,
     '',
     `Otros datos: ${form.notes || '-'}`,
   ].join('\n')

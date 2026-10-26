@@ -61,8 +61,9 @@ import { Menu, X } from 'lucide-vue-next'
 import { SITE } from '@/data/site'
 
 const menu = [
+  { label: 'Servicios', to: '/#servicios' },
   { label: 'Cómo trabajamos', to: '/#como-trabajamos' },
-  { label: 'Garantías', to: '/#garantias' },
+  { label: 'Quiénes somos', to: '/#quienes-somos' },
   { label: 'Preguntas', to: '/#preguntas' },
 ]
 
