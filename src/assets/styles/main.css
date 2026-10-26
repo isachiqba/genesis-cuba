@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* Paleta sacada del logo: azul marino, rojo y azul cubanos sobre marfil. */
+@theme {
+  --color-navy-950: #0f1e2e;
+  --color-navy-900: #1b3249;
+  --color-navy-700: #3b5068;
+  --color-navy-100: #e4e8ee;
+  --color-paper: #faf8f5;
+  --color-paper-dark: #f1ede6;
+  --color-red: #c50f11;
+  --color-red-dark: #a10c0e;
+  --color-blue: #1a78ae;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-paper);
+  color: var(--color-navy-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+@layer components {
+  .btn-primary,
+  .btn-secondary,
+  .btn-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-red text-white hover:bg-red-dark;
+  }
+
+  .btn-secondary {
+    @apply border border-navy-900/20 text-navy-900 hover:bg-navy-900/5;
+  }
+
+  .btn-light {
+    @apply bg-white text-navy-900 hover:bg-navy-100;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold tracking-[0.2em] text-red uppercase;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold text-navy-900 sm:text-4xl;
+  }
+
+  .field {
+    @apply mt-1.5 block w-full rounded-xl border border-navy-100 bg-white px-4 py-3 text-sm text-navy-900 placeholder:text-navy-700/50 focus:border-blue focus:outline-none;
+  }
+}
