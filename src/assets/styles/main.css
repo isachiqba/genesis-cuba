@@ -2,15 +2,15 @@
 
 /* Paleta sacada del logo: azul marino, rojo y azul cubanos sobre marfil. */
 @theme {
-  --color-navy-950: #0f1e2e;
-  --color-navy-900: #1b3249;
+  --color-navy-950: #04152a;
+  --color-navy-900: #082240;
   --color-navy-700: #3b5068;
   --color-navy-100: #e4e8ee;
   --color-paper: #faf8f5;
   --color-paper-dark: #f1ede6;
-  --color-red: #c50f11;
-  --color-red-dark: #a10c0e;
-  --color-blue: #1a78ae;
+  --color-red: #d8080b;
+  --color-red-dark: #b0060a;
+  --color-blue: #086bbb;
 
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
