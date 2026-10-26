@@ -21,6 +21,21 @@
             Estamos comprometidos con preservar y conectar las historias familiares.
           </p>
         </div>
+
+        <div class="mt-10">
+          <p class="text-xs font-semibold tracking-[0.2em] text-navy-700 uppercase">Al frente de {{ SITE.name }}</p>
+          <ul class="mt-4 flex flex-wrap gap-4">
+            <li v-for="person in SITE.team" :key="person" class="flex items-center gap-3 rounded-full bg-paper py-2 pr-5 pl-2 ring-1 ring-navy-100">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-navy-900 text-sm font-semibold text-white" aria-hidden="true">
+                {{ initials(person) }}
+              </span>
+              <span class="leading-tight">
+                <span class="block text-sm font-semibold text-navy-900">{{ person }}</span>
+                <span class="block text-xs text-navy-700">Dirección</span>
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -28,4 +43,10 @@
 
 <script setup>
 import { SITE } from '@/data/site'
+
+const initials = (name) =>
+  name
+    .split(' ')
+    .map((part) => part[0])
+    .join('')
 </script>

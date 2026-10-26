@@ -1,7 +1,9 @@
 <template>
   <LegalPage title="Aviso legal">
     <h2>Titular del sitio web</h2>
-    <p>Este sitio web pertenece a {{ SITE.name }}. Contacto: {{ SITE.email }}.</p>
+    <p>
+      Este sitio web pertenece a {{ SITE.name }}, dirigida por {{ SITE.team.join(' y ') }}. Contacto: {{ SITE.email }}.
+    </p>
 
     <h2>Objeto</h2>
     <p>

@@ -9,6 +9,9 @@ export const SITE = {
   facebook: 'https://www.facebook.com/profile.php?id=61566462497212',
   messenger: 'https://www.facebook.com/messages/t/61566462497212',
   whatsapp: '', // PENDIENTE: solo dígitos, con prefijo de país
+
+  // Dirección de la empresa (CEO).
+  team: ['Manuel García', 'Mateo Vega'],
 }
 
 export const STEPS = [
