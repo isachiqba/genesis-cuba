@@ -5,7 +5,7 @@ export const SITE = {
   description:
     'Somos un equipo de investigadores especializados en buscar antepasados en Cuba. Encontramos certificados de bautismo, matrimonio y defunción, y te los enviamos en PDF. Solo pagas después de recibirlos.',
 
-  email: 'genesiscuba@gmail.com',
+  email: 'genesicuba@gmail.com',
   facebook: 'https://www.facebook.com/profile.php?id=61566462497212',
   messenger: 'https://www.facebook.com/messages/t/61566462497212',
   whatsapp: '', // PENDIENTE: solo dígitos, con prefijo de país
